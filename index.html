@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Día Internacional del Internet Seguro</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background: url('https://source.unsplash.com/1600x900/?technology,cybersecurity') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 20px;
+            color: white;
+        }
+        .navbar {
+            background: rgba(0, 255, 234, 0.808);
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 80px auto 20px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            color: black;
+        }
+        button {
+            background: linear-gradient(135deg, #ff7eb3, #ff758c);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .info {
+            display: none;
+            background: #ffebf0;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .video-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .image-gallery img {
+            width: 280px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Inicio</a>
+        <a href="#videos">Videos</a>
+        <a href="#consejos">Consejos</a>
+        <a href="#test">Prueba</a>
+        <a href="#imagenes">Imágenes</a>
+    </div>
+    
+    <div class="container">
+        <h1>Día Internacional del Internet Seguro</h1>
+        <p>Promoviendo un uso responsable y seguro del Internet.</p>
+        <h1>¿Qué es la ciberseguridad?</h1>
+        <p>La ciberseguridad, también conocida como seguridad digital, es la práctica de proteger su información digital, dispositivos y activos. Esto incluye información personal, cuentas, archivos, fotos e incluso el dinero.
+
+CIA
+El acrónimo "CIA" se usa a menudo para representar los tres pilares de la ciberseguridad.
+
+Confidencialidad: mantener los secretos y garantizar que solo los usuarios autorizados puedan obtener acceso a sus archivos y cuentas.
+
+Integridad: garantizar que su información es la que debe ser y de que nadie ha insertado, modificado o eliminado cosas sin su permiso. Por ejemplo, cambiar de forma malintencionada un número en una hoja de cálculo.
+
+Acceso: garantizar que puede tener acceso a su información y sistemas cuando lo necesite. Un ejemplo de un problema de acceso sería una denegación de servicio, donde los atacantes desbordan el sistema con tráfico de red para hacer que el acceso sea casi imposible; o ransomware que cifra el sistema e impide que lo use.
+        </p>
+        
+ <p>      Es el conjunto de prácticas, tecnologías y procesos diseñados para proteger sistemas, redes y datos de ataques cibernéticos. Su objetivo principal es garantizar la confidencialidad, integridad y disponibilidad de la información, protegiéndola de amenazas como hackers, malware, phishing y otros tipos de ataques.</p> 
+
+       <h1> Áreas clave de la ciberseguridad</h1>
+       <p>🔹 Seguridad de la información: Protección de datos sensibles y confidenciales.</p>
+        <p>🔹 Seguridad de redes: Defensa contra ataques a redes, como intrusiones y malware.</p>
+        <p>🔹 Seguridad en la nube: Protección de datos y aplicaciones almacenados en la nube.</p>
+        <p>🔹 Seguridad en dispositivos y endpoints: Protección de computadoras, móviles y otros dispositivos</p> 
+        <h2 id="videos">Videos informativos</h2>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/dmrlfWp9bBc" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/3FVG_1kNBXA" frameborder="0" allowfullscreen></iframe>
+        </div>
+        
+        <h2 id="consejos">Consejos de Seguridad
+                       (Da click en los botones)
+        </h2>
+        <button onclick="toggleInfo('contrasena')">Usa contraseñas seguras</button>
+        <div id="contrasena" class="info">
+            <ul>
+                <li>Usa combinaciones de letras, números y símbolos.</li>
+                <li>No reutilices contraseñas en diferentes cuentas.</li>
+                <li>Cambia tus contraseñas regularmente.</li>
+            </ul>
+        </div>
+        
+        <button onclick="toggleInfo('informacion')">No compartas información personal</button>
+        <div id="informacion" class="info">
+            <ul>
+                <li>No publiques tu dirección o número de teléfono en redes sociales.</li>
+                <li>Usa la configuración de privacidad adecuada.</li>
+                <li>Verifica siempre a quién envías información privada.</li>
+            </ul>
+        </div>
+        
+        <button onclick="toggleInfo('software')">Mantén tu software actualizado</button>
+        <div id="software" class="info">
+            <ul>
+                <li>Instala las actualizaciones de seguridad regularmente.</li>
+                <li>Usa software antivirus confiable.</li>
+                <li>Descarga programas solo desde fuentes oficiales.</li>
+            </ul>
+        </div>
+        
+        <button onclick="toggleInfo('enlaces')">Verifica los enlaces antes de hacer clic</button>
+        <div id="enlaces" class="info">
+            <ul>
+                <li>Pasa el cursor sobre los enlaces para ver la URL antes de hacer clic.</li>
+                <li>No abras enlaces sospechosos en correos electrónicos.</li>
+                <li>Usa herramientas para comprobar si un enlace es seguro.</li>
+            </ul>
+        </div>
+        
+        <h2 id="test">Prueba tus conocimientos</h2>
+        <p>¿Qué debes hacer si recibes un correo sospechoso?</p>
+        <button onclick="verificarRespuesta(true)">Marcarlo como spam</button>
+        <button onclick="verificarRespuesta(false)">Abrirlo para revisar</button>
+        <p id="resultado"></p>
+
+        <h2 id="imagenes">Galería de Imágenes</h2>
+        <div class="image-gallery">
+            <img src="https://itop.academy/wp-content/uploads/2022/08/por-que-formarse-en-ciberseguridad-itop-academy.jpg" alt="Ciberseguridad">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb1wXfPW7Z2Vu_etHasR_vL9UQxye4Dl_s0fJo0IubFQvPz1QRGBfDtmGjlvpeaQVr_mg&usqp=CAU" alt="Seguridad digital">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB70YQzcaqt6NEJisP9QyzWQamuFA97WR8qWkLd8Q-KWINVKR6v6f2t5viMTi3bhuBEM0&usqp=CAU" alt="Protección de datos">
+            <img src="https://www.ui1.es/sites/default/files/blog/images/ciberseguridad_retocada_0.jpg" alt="Ciberseguridad">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_c1y2HxtNeOCCS7Nxjgy_yciuPGCxeaFDtZ08o3ybX2bWTxziBgEJoDSZAgARLEIIXFY&usqp=CAU" alt="Ciberseguridad">
+            <img src="https://academia-ciberseguridad.com/web/image/8949-f3088cd5/imgprinc.png" alt="Ciberseguridad">
+
+
+            <h2> Mayte Medina e Isabel Hernandez </h2>
+            <style>
+                img {
+                  width: 100%;  /* Ajusta el ancho al 100% del contenedor */
+                  height: auto; /* Mantiene la proporción original */
+                }
+              </style>
+              
+            <img src="https://digitales.es/img/blog/5d4cd3704e72f038ac8a592093780487.jpg" alt="Ciberseguridad">
+
+        </div>
+    </div>
+
+    <script>
+        function toggleInfo(id) {
+            var info = document.getElementById(id);
+            info.style.display = info.style.display === 'block' ? 'none' : 'block';
+        }
+        
+        function verificarRespuesta(correcto) {
+            var resultado = document.getElementById("resultado");
+            resultado.innerText = correcto ? "¡Correcto! 🎉" : "Incorrecto, inténtalo de nuevo. ❌";
+            resultado.style.color = correcto ? "green" : "red";
+        }
+    </script>
+</body>
+</html>
